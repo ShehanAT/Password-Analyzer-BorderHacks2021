@@ -4,7 +4,7 @@
 Very simple password analyzer build using Angular.js for BorderHacks 2021 Hackathon
 
 ### Live Demo
-link: https://git.heroku.com/password-strength-checker-bh21.git
+https://git.heroku.com/password-strength-checker-bh21.git
 
 ### Screenshots
 ![Welcome Screen](./screenshots/screenshot_1.png)
