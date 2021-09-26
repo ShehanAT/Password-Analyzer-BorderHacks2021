@@ -33,6 +33,9 @@ export class PasswordAnalyzerComponent implements OnInit {
       this.showPasswordStrength = false;
       this.strengthBadge.style.display = 'none';
       this.strengthBadge.style.backgroundColor = 'red';
+      // var bodyElement: Element = document.getElementsByClassName("body")[0];
+      // bodyElement
+      document.body.style.backgroundColor = "black";
       this.strengthBadge.textContent = 'Weak';
       return ;
     }
@@ -40,16 +43,19 @@ export class PasswordAnalyzerComponent implements OnInit {
       this.showPasswordStrength = true;
         this.strengthBadge.style.display = 'inline';
         this.strengthBadge.style.backgroundColor = "green";
+        document.body.style.backgroundColor = "green";
         this.strengthBadge.textContent = 'Strong';
     } else if(this.mediumPassword.test(password)) {
         this.showPasswordStrength = true;
         this.strengthBadge.style.display = 'inline';
-        this.strengthBadge.style.backgroundColor = 'yellow';
+        this.strengthBadge.style.backgroundColor = "orange";
+        document.body.style.backgroundColor = "orange";
         this.strengthBadge.textContent = 'Medium';
     } else {
         this.showPasswordStrength = true;
         this.strengthBadge.style.display = 'inline';
-        this.strengthBadge.style.backgroundColor = 'red';
+        this.strengthBadge.style.backgroundColor = "red";
+        document.body.style.backgroundColor = "red";
         this.strengthBadge.textContent = 'Weak';
     }
   }
